@@ -1,0 +1,39 @@
+.btn {
+  font-size: 19px;
+  font-weight: bold;
+  padding: 21px 41px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+
+   &--theme--whire {
+     background: #fff;
+     color: $darkGreen;
+      &:hover {
+        color: #fff;
+        background: $darkGreen;
+      }
+   }
+    &--theme--green {
+      background: $darkGreen;
+      color: #fff;
+      outline: none;
+
+       &:hover {
+         color: $darkGreen;
+         background: #fff;
+       }
+    }
+     &--theme--transparent {
+       background: transparent;
+       color: #000;
+       text-transform: none;
+       outline: none;
+
+        &:hover {
+          color: $darkGreen;
+        }
+     }
+}

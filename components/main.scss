@@ -1,0 +1,27 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+$z-fixed-menu: 100;
+@import "../components/layout";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+@import '../components/normalize';
+@import '../components/blocks/hero';
+@import '../components/blocks/header';
+@import '../components/blocks/features';
+@import '../components/blocks/feature';
+@import '../components/blocks/btn';
+@import '../components/blocks/section';
+@import '../components/blocks/headline';
+@import '../components/blocks/benefits';
+@import '../components/blocks/benefit';
+@import '../components/blocks/benefits-section';
+@import '../components/blocks/reviews';
+@import '../components/blocks/interactive-avatar';
+@import '../components/blocks/reviews-section';
+@import '../components/blocks/order-section';
+@import '../components/blocks/form';
+@import '../components/blocks/radio';
+@import '../components/blocks/fixed-menu';
