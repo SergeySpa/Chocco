@@ -461,7 +461,7 @@ template {
     text-align: center;
   }
   .hero__title-section::before {
-    content: url(/img/hero-bars.png);
+    content: url(../img/hero-bars.png);
   }
 }
 
