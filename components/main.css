@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
+html {
+  font-size: 18px;
+}
+
 html, body {
   height: 100%;
 }
@@ -8,7 +12,6 @@ html, body {
 }
 
 body {
-  font-size: 18px;
   font-family: "Alegreya Sans", Arial, Helvetica sans-serif;
   line-height: 1.42;
   position: relative;
@@ -21,13 +24,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }
@@ -282,7 +285,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 0.0555555556rem dotted ButtonText;
 }
 
 /**
@@ -354,7 +357,7 @@ textarea {
 [type=search] {
   -webkit-appearance: textfield;
   /* 1 */
-  outline-offset: -2px;
+  outline-offset: -0.1111111111rem;
   /* 2 */
 }
 
@@ -412,20 +415,20 @@ template {
   background: url(../img/big-leaf.png) right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   color: #fff;
   position: relative;
 }
 .hero::before {
   position: absolute;
-  bottom: -40px;
+  bottom: -2.2222222222rem;
   left: 2%;
   content: url(../img/corner-leaf.png);
 }
 .hero:after {
   content: url(../img/berries-and-leaves.png);
   position: absolute;
-  bottom: -40px;
+  bottom: -2.2222222222rem;
   right: 0;
 }
 
@@ -438,21 +441,21 @@ template {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px;
+  padding: 1.3333333333rem 0 2.5rem;
   background: url(../img/chocolates.png) right center/50% auto no-repeat;
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 27px;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 40px;
+  font-size: 1.1666666667rem;
+  margin-bottom: 2.2222222222rem;
   padding-right: 10%;
 }
 
@@ -468,23 +471,23 @@ template {
 }
 
 .menu__item {
-  margin-right: 25px;
+  margin-right: 1.3888888889rem;
 }
 .menu__item:last-child {
   margin-right: 0;
 }
 
 .phome-number {
-  font-size: 24px;
+  font-size: 1.3333333333rem;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
 .phone-number__icon-elem {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  margin-right: 0.3333333333rem;
 }
 
 .menu__link {
@@ -496,7 +499,7 @@ template {
 }
 
 .features__item {
-  margin-right: 46px;
+  margin-right: 2.5555555556rem;
 }
 .features__item:last-child {
   margin-right: 0;
@@ -507,21 +510,21 @@ template {
 }
 
 .feature__icon {
-  width: 45px;
-  margin-right: 7px;
+  width: 2.5rem;
+  margin-right: 0.3888888889rem;
 }
 
 .feature__text {
-  font-size: 16px;
-  max-width: 85px;
+  font-size: 0.8888888889rem;
+  max-width: 4.7222222222rem;
 }
 
 .btn {
-  font-size: 19px;
+  font-size: 1.0555555556rem;
   font-weight: bold;
-  padding: 21px 41px;
+  padding: 1.1666666667rem 2.2777777778rem;
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: 5.5555555556rem;
   line-height: 1;
   text-decoration: none;
   border: none;
@@ -555,7 +558,7 @@ template {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -568,9 +571,9 @@ template {
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
-  margin-bottom: 60px;
+  margin-bottom: 3.3333333333rem;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -578,11 +581,11 @@ template {
 
 .headline {
   text-align: center;
-  margin-bottom: 51px;
+  margin-bottom: 2.8333333333rem;
 }
 
 .headline__title {
-  margin-bottom: 25px;
+  margin-bottom: 1.3888888889rem;
 }
 
 .headline__subtitle {
@@ -601,7 +604,7 @@ template {
 .benefits__item::before {
   content: url(../img/separator.png);
   position: absolute;
-  top: 30px;
+  top: 1.6666666667rem;
   right: 0;
   transform: translateX(50%);
 }
@@ -621,8 +624,8 @@ template {
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
@@ -630,8 +633,8 @@ template {
 }
 
 .benefit__icon {
-  width: 75px;
-  height: 69px;
+  width: 4.1666666667rem;
+  height: 3.8333333333rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -639,9 +642,9 @@ template {
 }
 
 .benefit__title {
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.5555555556rem;
   color: #000;
 }
 
@@ -652,28 +655,28 @@ template {
 .benefits-section:before {
   content: url(../img/bars-and-berries.png);
   position: absolute;
-  bottom: -80px;
+  bottom: -4.4444444444rem;
   left: 0;
 }
 
 .reviews__display {
   background: #F8FAF9 url(../img/drown-berries.png) right top no-repeat;
-  padding: 50px 45px 34px;
-  margin-bottom: 20px;
+  padding: 2.7777777778rem 2.5rem 1.8888888889rem;
+  margin-bottom: 1.1111111111rem;
   overflow: hidden;
   position: relative;
 }
 .reviews__display::before {
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -65px;
+  top: -3.6111111111rem;
 }
 
 .reviews__display-inner {
@@ -681,8 +684,8 @@ template {
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: 14.1111111111rem;
+  height: 14.4444444444rem;
 }
 
 .reviews__avatar-img {
@@ -693,23 +696,23 @@ template {
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 1.1111111111rem;
 }
 
 .reviews__title {
-  font-size: 30px;
+  font-size: 1.6666666667rem;
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: 1.2222222222rem;
   color: black;
 }
 
 .reviews__text {
   padding-right: 24%;
-  margin-bottom: 36px;
+  margin-bottom: 2rem;
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
 }
@@ -720,9 +723,9 @@ template {
 }
 
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
-  border: 4px solid transparent;
+  width: 4.4444444444rem;
+  height: 4.4444444444rem;
+  border: 0.2222222222rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -754,7 +757,7 @@ template {
 .reviews-section::before {
   content: url(../img/reviews-left-berries.png);
   position: absolute;
-  bottom: -180px;
+  bottom: -10rem;
   left: 0;
 }
 
@@ -771,7 +774,7 @@ template {
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .form__col:last-child {
   margin-right: 0;
@@ -779,12 +782,12 @@ template {
 
 .form__row {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 0.5555555556rem;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 15px;
+  margin-right: 0.8333333333rem;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -793,12 +796,12 @@ template {
 .form__input {
   width: 100%;
   border: none;
-  padding: 14px 11px;
-  border: solid 3px transparent;
-  border-radius: 4px;
+  padding: 0.7777777778rem 0.6111111111rem;
+  border: solid 0.1666666667rem transparent;
+  border-radius: 0.2222222222rem;
 }
 .form__input--textarea {
-  height: 145px;
+  height: 8.0555555556rem;
   resize: none;
 }
 .form__input:focus {
@@ -809,11 +812,11 @@ template {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  padding: 11px 0px;
+  padding: 0.6111111111rem 0rem;
 }
 
 .form__btns {
-  margin-top: 36px;
+  margin-top: 2rem;
 }
 
 .radio {
@@ -825,7 +828,7 @@ template {
   margin-right: 1.25rem;
 }
 .radio--checkbox .radio__visible {
-  border-radius: 4px;
+  border-radius: 0.2222222222rem;
 }
 .radio--checkbox .radio__visible::before {
   background: url(../img/tick.png) center center no-repeat;
@@ -839,8 +842,8 @@ template {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.4444444444rem;
+  height: 1.4444444444rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
@@ -848,8 +851,8 @@ template {
 }
 .radio__visible::before {
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
   background: #365a49;
   border-radius: 50%;
   position: absolute;
@@ -867,25 +870,25 @@ template {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.2777777778rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0555555556rem solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link::before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
   background: #fff;
   position: absolute;

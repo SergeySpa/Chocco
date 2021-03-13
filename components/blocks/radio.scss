@@ -7,7 +7,7 @@
 
    &--checkbox {
      .radio__visible {
-       border-radius: 4px;
+       border-radius: rem(4px);
 
         &::before {
           background: url(../img/tick.png) center center no-repeat;
@@ -27,8 +27,8 @@
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   position: relative;
   border-radius: 50%;
   background: #fff;
@@ -36,8 +36,8 @@
 
     &::before {
       content: "";
-      width: 12px;
-      height: 12px;
+      width: rem(12px);
+      height: rem(12px);
       background: #365a49;
       border-radius: 50%;
       position: absolute;

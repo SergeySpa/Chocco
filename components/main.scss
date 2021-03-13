@@ -1,11 +1,12 @@
 $containerWidth: 940px;
-$baseFontSize: 18px;
+$baseFontSize:  18px;
 
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 
 $z-fixed-menu: 100;
 @import "../components/layout";
+@import "../components/media";
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import '../components/normalize';
 @import '../components/blocks/hero';
