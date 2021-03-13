@@ -6,6 +6,12 @@ background:  url(../img/big-leaf.png) right bottom no-repeat;
   color: #fff;
   position: relative;
 
+   &::before, &::after {
+     @include tablets {
+       display: none;
+     }
+   }
+
    &::before {
      position:absolute;
      bottom: rem(-40px);
@@ -22,6 +28,26 @@ background:  url(../img/big-leaf.png) right bottom no-repeat;
 }
 .hero__title-section {
   width: 46%;
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+     &::before {
+       content: url(/img/hero-bars.png);
+     }
+  }
+}
+
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
 }
 .hero__container {
   display: flex;
@@ -30,6 +56,10 @@ background:  url(../img/big-leaf.png) right bottom no-repeat;
   height: 100%;
   padding: rem(24px) 0 rem(45px);
   background: url(../img/chocolates.png) right center / 50% auto  no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
 
 .hero__main-title {

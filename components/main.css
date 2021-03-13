@@ -2,6 +2,16 @@
 html {
   font-size: 18px;
 }
+@media (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 html, body {
   height: 100%;
@@ -419,6 +429,11 @@ template {
   color: #fff;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .hero::before, .hero::after {
+    display: none;
+  }
+}
 .hero::before {
   position: absolute;
   bottom: -2.2222222222rem;
@@ -435,6 +450,26 @@ template {
 .hero__title-section {
   width: 46%;
 }
+@media screen and (max-width: 768px) {
+  .hero__title-section {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__title-section::before {
+    content: url(/img/hero-bars.png);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__icons-section {
+    display: none;
+  }
+}
 
 .hero__container {
   display: flex;
@@ -443,6 +478,11 @@ template {
   height: 100%;
   padding: 1.3333333333rem 0 2.5rem;
   background: url(../img/chocolates.png) right center/50% auto no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+  }
 }
 
 .hero__main-title {
@@ -463,6 +503,18 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-number.header__phone-number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {

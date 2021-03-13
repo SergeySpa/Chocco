@@ -1,10 +1,19 @@
 html {
-  font-size: $baseFontSize;
+  font-size: $baseFontSize;  
+  @media (max-width: $tablets) {
+    font-size: $baseFontSize - 1px;
+}
+
+   @media (max-width: $phones) {
+  font-size: $baseFontSize - 2px;
+}
+
 }
 
 
 html, body {
   height: 100%;
+  
 }
 
 
