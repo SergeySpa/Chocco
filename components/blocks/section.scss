@@ -10,6 +10,13 @@
 
      .section__title {
        color: inherit;
+       @include tablets {
+        margin-bottom: rem(24px);
+      }
+  
+      @include phones {
+        margin-bottom: rem(32px);
+      }
      }
    }
 }

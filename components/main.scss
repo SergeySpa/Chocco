@@ -8,14 +8,19 @@ $phones: 480px;
 
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
+$black: #292929;
+$green: #497870;
 
 $z-fixed-menu: 100;
+
+@import "media";
 @import "../components/layout";
-@import "../components/media";
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import '../components/normalize';
 @import '../components/blocks/hero';
 @import '../components/blocks/header';
+@import '../components/blocks/logo';
 @import '../components/blocks/features';
 @import '../components/blocks/feature';
 @import '../components/blocks/btn';
@@ -31,3 +36,9 @@ $z-fixed-menu: 100;
 @import '../components/blocks/form';
 @import '../components/blocks/radio';
 @import '../components/blocks/fixed-menu';
+@import '../components/blocks/hamburger';
+@import '../components/blocks/menu';
+@import '../components/blocks/map';
+@import '../components/blocks/footer';
+@import '../components/blocks/contacts';
+@import '../components/blocks/socials';

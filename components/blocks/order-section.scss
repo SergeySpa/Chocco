@@ -3,4 +3,12 @@
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: auto, auto, cover;
     background-position: 99% 82%, 2% 86%, center;
+
+    @include tablets {
+      background: url(../img/form-pattern.png) center center/cover no-repeat;
+    }
+  
+    @include phones {
+     background: url(../img/form-pattern.png) center center/cover no-repeat;
+    }
 }

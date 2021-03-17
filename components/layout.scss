@@ -1,19 +1,18 @@
 html {
   font-size: $baseFontSize;  
-  @media (max-width: $tablets) {
+  @include tablets {
     font-size: $baseFontSize - 1px;
-}
+  }
 
-   @media (max-width: $phones) {
-  font-size: $baseFontSize - 2px;
-}
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
 
 }
 
 
 html, body {
   height: 100%;
-  
 }
 
 
@@ -42,6 +41,7 @@ body {
   max-width: $containerWidth;
   margin: 0 auto;
   position: relative;
+
 }
 
 ul {
