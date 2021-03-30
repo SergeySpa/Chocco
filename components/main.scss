@@ -10,14 +10,19 @@ $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 $black: #292929;
 $green: #497870;
+$lightGrey: #F8FAF9;
+$grey: #313131;
 
 $z-fixed-menu: 100;
+$z-fullscreen-menu: 1000;
+$z-decor: 10;
 
 @import "media";
 @import "../components/layout";
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import '../components/normalize';
+@import '../components/blocks/fullscreen-menu';
 @import '../components/blocks/hero';
 @import '../components/blocks/header';
 @import '../components/blocks/logo';
@@ -30,6 +35,8 @@ $z-fixed-menu: 100;
 @import '../components/blocks/benefit';
 @import '../components/blocks/benefits-section';
 @import '../components/blocks/reviews';
+@import '../components/blocks/slide';
+@import '../components/blocks/slider';
 @import '../components/blocks/interactive-avatar';
 @import '../components/blocks/reviews-section';
 @import '../components/blocks/order-section';
@@ -41,4 +48,5 @@ $z-fixed-menu: 100;
 @import '../components/blocks/map';
 @import '../components/blocks/footer';
 @import '../components/blocks/contacts';
+@import '../components/blocks/slider-section';
 @import '../components/blocks/socials';

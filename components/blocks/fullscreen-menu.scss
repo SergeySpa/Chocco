@@ -1,0 +1,49 @@
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: $grey;
+  overflow: hidden;
+  z-index: $z-fullscreen-menu;
+  display: none;
+}
+
+.active {
+  display: block;
+
+  @include phones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.fullscreen-menu__close {
+  position: absolute;
+  top: 58px;
+  right: 39px;
+  width: 26px;
+  height: 26px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    background: #fff;
+    height: 4px;
+    border-radius: 10px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

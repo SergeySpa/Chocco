@@ -33,7 +33,7 @@
               </svg>
               <span class="phone-number__text">8 800 903 90 90</span>
             </a>
-            <a href="" class="hamburger">
+            <a href="#"  id="hamburger"class="hamburger">
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
@@ -127,6 +127,127 @@
             </div>
           </li>
         </ul>
+        </div>
+      </section>
+      <section class="section slider-section section--bg-grey">
+        <div class="container slider-container">
+          <div class="slider__controls">
+            <a href="#" class="slider__btn slider__btn--left">
+              <svg class="slider__arrow" alt="arrow left icon">
+                <use xlink:href="./img/sprite.svg#left-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="slider__btn slider__btn--right">
+              <svg class="slider__arrow" alt="arrow right icon">
+                <use xlink:href="./img/sprite.svg#right-arrow"></use>
+              </svg>
+            </a>
+
+          </div>
+          <div class="slider__list-wrap">
+            <ul class="slider__list">
+              <li class="slider__item slide">
+                <div class="slide__picture">
+                  <div class="slide__img-wrap">
+                    <img src="./img/bars-granola.png" alt="chocolate bars" class="slide__img">
+                  </div>
+                </div>
+                <article class="slide__info">
+                  <div class="slide__dropdown">
+                    <a href="#" class="slide__dropdown-link">
+                      <svg class="slide__dropdown-icon" alt="bar icon">
+                        <use xlink:href="./img/sprite.svg#bar"></use>
+                      </svg>
+                      <div class="slide__dropdown-title">Состав
+                      </div>
+                    </a>
+                    <ul class="slide__dropdown-menu">
+                      <li class="slide__dropdown-item">
+                        <div class="slide__dropdown-item-col">
+                          <svg class="slide__dropdown-item-icon" alt="grape icon">
+                            <use xlink:href="./img/sprite.svg#grape"></use>
+                          </svg>
+                          <div class="slide__dropdown-item-title">Виноград</div>
+                        </div>
+                        <div class="slide__dropdown-item-weight">25 г</div>
+                      </li>
+                      <li class="slide__dropdown-item">
+                        <div class="slide__dropdown-item-col">
+                          <svg class="slide__dropdown-item-icon" alt="nut icon">
+                            <use xlink:href="./img/sprite.svg#nut"></use>
+                          </svg>
+                          <div class="slide__dropdown-item-title">Грецкий орех</div>
+                        </div>
+                        <div class="slide__dropdown-item-weight">32 г</div>
+                      </li>
+                      <li class="slide__dropdown-item">
+                        <div class="slide__dropdown-item-col">
+                          <svg class="slide__dropdown-item-icon" alt="sesame icon">
+                            <use xlink:href="./img/sprite.svg#sesame"></use>
+                          </svg>
+                          <div class="slide__dropdown-item-title">Кунжутное семя</div>
+                        </div>
+                        <div class="slide__dropdown-item-weight">20 г</div>
+                      </li>
+                      <li class="slide__dropdown-item">
+                        <div class="slide__dropdown-item-col">
+                          <svg class="slide__dropdown-item-icon" alt="washing-powder icon">
+                            <use xlink:href="./img/sprite.svg#washing-powder"></use>
+                          </svg>
+                          <div class="slide__dropdown-item-title">Сухое молоко</div>
+                        </div>
+                        <div class="slide__dropdown-item-weight">10 г</div>
+                      </li>
+                      <li class="slide__dropdown-item">
+                        <div class="slide__dropdown-item-col">
+                          <svg class="slide__dropdown-item-icon" alt="substitute icon">
+                            <use xlink:href="./img/sprite.svg#substitute"></use>
+                          </svg>
+                          <div class="slide__dropdown-item-title">Зам. сахара</div>
+                        </div>
+                        <div class="slide__dropdown-item-weight">4 г</div>
+                      </li>
+                      <li class="slide__dropdown-item">
+                        <div class="slide__dropdown-item-col">
+                          <svg class="slide__dropdown-item-icon" alt="beans icon">
+                            <use xlink:href="./img/sprite.svg#beans"></use>
+                          </svg>
+                          <div class="slide__dropdown-item-title">Какао бобы</div>
+                        </div>
+                        <div class="slide__dropdown-item-weight">4 г</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <h2 class="slide__title">Батончик “Гранола виноград”</h2>
+                  <div class="slide__desc">
+                    <div class="slide__text">
+                      <p>
+                        Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко,
+                        заменитель сахара и какао бобы.
+                      </p>
+                    </div>
+                    <div class="slide__features">
+                      <div class="slide__features-row">
+                        <div class="slide__features-title">Калорийность</div>
+                        <div class="slide__features-text">110 ккал</div>
+                      </div>
+                      <div class="slide__features-row">
+                        <div class="slide__features-title">Вес</div>
+                        <div class="slide__features-text">95 грамм</div>
+                      </div>
+                    </div>
+                    <div class="slide__footer">
+                      <div class="slide__price">140 ₽</div>
+                      <div class="slide__btn">
+                        <button class="btn btn--theme-lightgreen">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section reviews-section">
@@ -289,6 +410,34 @@
       </section>
     </div>
   </div>
+  <div class="fullscreen-menu">
+    <a href="#" class="fullscreen-menu__close"></a>
+    <nav class="menu menu--vertical">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">О нас</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Батончики</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Команда</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Меню</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Отзывы</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Как мы работаем</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active"><a href="" class="fixed-menu__link"></a></li>
@@ -302,5 +451,6 @@
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
+  <script src="./js/fullscreenMenu.js"></script>
 </body>
 </html>

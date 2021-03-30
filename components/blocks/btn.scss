@@ -27,6 +27,16 @@
          background: #fff;
        }
     }
+    &--theme-lightgreen {
+      color: #fff;
+      background: $green;
+      outline: none;
+  
+      &:hover {
+        background: #2E4E3F;
+        color: #fff;
+      }
+    }
      &--theme--transparent {
        background: transparent;
        color: #000;

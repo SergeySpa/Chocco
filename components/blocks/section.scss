@@ -5,6 +5,10 @@
   flex-direction: column;
   justify-content: center;
 
+  &--bg-grey {
+    background-color: $lightGrey;
+  }
+
    &--font-color--green {
      color: $darkGreen;
 

@@ -1,0 +1,45 @@
+.slider__btn {
+  position: absolute;
+  top: 50%;
+
+  &--left {
+    left: -2%;
+  }
+
+  &--right {
+    right: -2%;
+  }
+
+  @include tablets {
+    top: 25%;
+
+    &--left {
+      left: 17%;
+    }
+
+    &--right {
+      right: 17%;
+    }
+  }
+
+  @include phones {
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}
+
+.slider__arrow {
+  width: rem(14px);
+  height: rem(28px);
+  fill: none;
+}
+
+.slider__list-wrap {
+  max-width: $containerWidth;
+  overflow: hidden;
+}
