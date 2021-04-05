@@ -1,6 +1,8 @@
 .slider__btn {
   position: absolute;
   top: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
 
   &--left {
     left: -2%;
@@ -39,7 +41,8 @@
   fill: none;
 }
 
-.slider__list-wrap {
-  max-width: $containerWidth;
-  overflow: hidden;
+.slider__list {
+  display: flex;
+  align-items: center;
 }
+

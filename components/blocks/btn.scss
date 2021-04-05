@@ -37,14 +37,27 @@
         color: #fff;
       }
     }
-     &--theme--transparent {
-       background: transparent;
-       color: #000;
-       text-transform: none;
-       outline: none;
+    &--theme-darkgreen {
+      color: #fff;
+      background: $darkGreen;
+      outline: none;
+  
+      &:hover {
+        color: $darkGreen;
+        background: #fff;
+      }
+    }
+    &--theme-transparent {
+      font-weight: normal;
+      color: $green;
+      text-transform: none;
+      background: transparent;
+      outline: none;
+  
+      &:hover {
+        color: #000;
+      }
+  
+    }
 
-        &:hover {
-          color: $darkGreen;
-        }
-     }
 }

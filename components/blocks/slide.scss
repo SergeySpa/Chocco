@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  // width: $containerWidth;
 
   @include tablets {
     flex-direction: column;
@@ -53,7 +54,7 @@
   }
 }
 
-
+// выпадающее меню
 .slide__dropdown {
   width: rem(91px);
   height: rem(91px);
@@ -72,7 +73,7 @@
       left: 100%;
       opacity: .95;
 
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 945px) {
         top: 100%;
         left: 0;
       }
@@ -122,6 +123,7 @@
   padding: rem(30px) rem(28px);
   opacity: 0;
   transition: opacity .5s;
+  z-index: $z-dropdown;
 }
 
 .slide__dropdown-item {
@@ -146,7 +148,7 @@
   max-height: rem(24px);
   margin-right: rem(16px);
 }
-
+// конец выпадающего меню
 
 .slide__title {
   font-size: rem(36px);
@@ -233,4 +235,8 @@
     margin-right: 0;
     margin-bottom: rem(18px);
   }
+}
+
+.slide__btn {
+  z-index: 10;
 }

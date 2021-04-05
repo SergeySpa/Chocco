@@ -1,5 +1,6 @@
 $containerWidth: 940px;
 $baseFontSize:  18px;
+$textLineHeight: 1.3;
 
 
 $tablets: 768px;
@@ -16,6 +17,7 @@ $grey: #313131;
 $z-fixed-menu: 100;
 $z-fullscreen-menu: 1000;
 $z-decor: 10;
+$z-dropdown: 20;
 
 @import "media";
 @import "../components/layout";
@@ -23,20 +25,23 @@ $z-decor: 10;
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
 @import '../components/normalize';
 @import '../components/blocks/fullscreen-menu';
+@import '../components/blocks/modal';
 @import '../components/blocks/hero';
 @import '../components/blocks/header';
 @import '../components/blocks/logo';
+@import '../components/blocks/slider';
 @import '../components/blocks/features';
 @import '../components/blocks/feature';
 @import '../components/blocks/btn';
 @import '../components/blocks/section';
+@import '../components/blocks/bx-wrapper';
+@import '../components/blocks/team';
 @import '../components/blocks/headline';
 @import '../components/blocks/benefits';
 @import '../components/blocks/benefit';
 @import '../components/blocks/benefits-section';
 @import '../components/blocks/reviews';
 @import '../components/blocks/slide';
-@import '../components/blocks/slider';
 @import '../components/blocks/interactive-avatar';
 @import '../components/blocks/reviews-section';
 @import '../components/blocks/order-section';
