@@ -1,0 +1,60 @@
+$containerWidth: 940px;
+$baseFontSize:  18px;
+$textLineHeight: 1.3;
+
+
+$tablets: 768px;
+$phones: 480px;
+
+
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+$black: #292929;
+$green: #497870;
+$lightGrey: #F8FAF9;
+$middleGrey: #626262;
+$grey: #313131;
+
+$z-fixed-menu: 100;
+$z-fullscreen-menu: 1000;
+$z-decor: 10;
+$z-dropdown: 20;
+
+@import "media";
+@import "../components/layout";
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap');
+@import '../components/normalize';
+@import '../components/blocks/fullscreen-menu';
+@import '../components/blocks/modal';
+@import '../components/blocks/hero';
+@import '../components/blocks/header';
+@import '../components/blocks/logo';
+@import '../components/blocks/slider';
+@import '../components/blocks/features';
+@import '../components/blocks/feature';
+@import '../components/blocks/btn';
+@import '../components/blocks/section';
+@import '../components/blocks/products-menu';
+@import '../components/blocks/bx-wrapper';
+@import '../components/blocks/player';
+@import '../components/blocks/team';
+@import '../components/blocks/headline';
+@import '../components/blocks/benefits';
+@import '../components/blocks/benefit';
+@import '../components/blocks/benefits-section';
+@import '../components/blocks/reviews';
+@import '../components/blocks/slide';
+@import '../components/blocks/interactive-avatar';
+@import '../components/blocks/reviews-section';
+@import '../components/blocks/order-section';
+@import '../components/blocks/form';
+@import '../components/blocks/radio';
+@import '../components/blocks/fixed-menu';
+@import '../components/blocks/hamburger';
+@import '../components/blocks/menu';
+@import '../components/blocks/map';
+@import '../components/blocks/contacts';
+@import '../components/blocks/slider-section';
+@import '../components/blocks/footer';
+@import '../components/blocks/socials';

@@ -1,0 +1,63 @@
+.btn {
+  display: inline-block;
+  font-size: rem(19px);
+  font-weight: bold;
+  padding: rem(21px) rem(41px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+
+   &--theme--whire {
+     background: #fff;
+     color: $darkGreen;
+      &:hover {
+        color: #fff;
+        background: $darkGreen;
+      }
+   }
+    &--theme--green {
+      background: $darkGreen;
+      color: #fff;
+      outline: none;
+
+       &:hover {
+         color: $darkGreen;
+         background: #fff;
+       }
+    }
+    &--theme-lightgreen {
+      color: #fff;
+      background: $green;
+      outline: none;
+  
+      &:hover {
+        background: #2E4E3F;
+        color: #fff;
+      }
+    }
+    &--theme-darkgreen {
+      color: #fff;
+      background: $darkGreen;
+      outline: none;
+  
+      &:hover {
+        color: $darkGreen;
+        background: #fff;
+      }
+    }
+    &--theme-transparent {
+      font-weight: normal;
+      color: $green;
+      text-transform: none;
+      background: transparent;
+      outline: none;
+  
+      &:hover {
+        color: #000;
+      }
+  
+    }
+
+}

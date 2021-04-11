@@ -1,0 +1,142 @@
+.reviews__list {
+  position: relative;
+  min-height: 280px;
+  padding: rem(42px);
+  overflow: hidden;
+  background: #F8FAF9 url("../img/drown-berries.png") top rem(24px) right no-repeat;
+  margin-bottom: rem(16px);
+
+  @include tablets {
+    padding: rem(58px) rem(25px) rem(28px);
+    background-position: top rem(18px) right;
+    margin-bottom: rem(30px);
+  }
+
+  @include phones {
+    padding: rem(58px) 0 0 0;
+    margin-bottom: rem(50px);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(83px);
+    height: rem(83px);
+    background: #fff;
+    border-radius: 50%;
+    top: rem(-56px);
+    left: 50%;
+    transform: translate(-50%);
+
+    @include phones {
+      display: none;
+    }
+  }
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+
+  &.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
+
+.reviews__item-inner {
+  display: flex;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.reviews__avatar {
+  width: rem(253px);
+  height: rem(264px);
+
+  @include tablets {
+    width: rem(138px);
+    height: rem(138px);
+    margin-bottom: rem(32px);
+  }
+
+  @include phones {
+    margin-bottom: rem(18px);
+  }
+}
+
+.reviews__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews__content {
+  width: 52%;
+  margin-left: rem(40px);
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.reviews__title {
+  font-size: rem(27px);
+  font-weight: 700;
+  color: $black;
+  margin-bottom: rem(10px);
+
+  @include phones {
+    padding: 0 24%;
+  }
+}
+
+.reviews__text {
+  line-height: $textLineHeight;
+  margin-bottom: rem(22px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
+
+  @include phones {
+    padding: 0 rem(20px);
+    margin-bottom: rem(10px);
+  }
+
+  & p {
+    margin-bottom: rem(6px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.reviews__author {
+  font-weight: 500;
+  color: $black;
+
+  @include phones {
+    padding-top: rem(10px);
+    background: #fff;
+  }
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}

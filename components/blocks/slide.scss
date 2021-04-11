@@ -1,0 +1,242 @@
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: $containerWidth;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.slide__picture {
+  height: 100%;
+
+  @include tablets {
+    width: 54%;
+    padding-top: 0;
+    margin-bottom: rem(8px);
+  }
+
+  @include phones {
+    width: 76%;
+    margin-bottom: rem(2px);
+
+  }
+}
+
+.slide__img-wrap {
+  padding-top: rem(42px);
+
+  @include tablets {
+    padding-top: 0;
+  }
+}
+
+.slide__img {
+  max-width: 100%;
+}
+
+.slide__info {
+  width: 50%;
+  padding: rem(66px) rem(50px);
+
+  @include tablets {
+    width: 70%;
+    text-align: center;
+    padding: 0;
+  }
+
+  @include phones {
+    width: 76%;
+  }
+}
+
+// выпадающее меню
+.slide__dropdown {
+  width: rem(91px);
+  height: rem(91px);
+  background: #86C3D7;
+  border-radius: 4px;
+  color: #fff;
+  position: relative;
+  margin-bottom: rem(24px);
+  transition: background .3s;
+  position: relative;
+
+  &:hover {
+    background: #60AACC;
+
+    & .slide__dropdown-menu {
+      left: 100%;
+      opacity: .95;
+
+      @media screen and (max-width: 945px) {
+        top: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.slide__dropdown-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:focus~.slide__dropdown-menu {
+    left: 100%;
+    opacity: .95;
+  }
+}
+
+.slide__dropdown-icon {
+  width: rem(46px);
+  height: rem(46px);
+  margin-bottom: rem(6px);
+}
+
+.slide__dropdown-title {
+  font-size: rem(14px);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.slide__dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  width: rem(273px);
+  color: #000;
+  background: #fff;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: rem(30px) rem(28px);
+  opacity: 0;
+  transition: opacity .5s;
+  z-index: $z-dropdown;
+}
+
+.slide__dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: rem(16px);
+  margin-bottom: rem(28px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.slide__dropdown-item-col {
+  display: flex;
+  align-items: center;
+}
+
+.slide__dropdown-item-icon {
+  max-width: rem(24px);
+  max-height: rem(24px);
+  margin-right: rem(16px);
+}
+// конец выпадающего меню
+
+.slide__title {
+  font-size: rem(36px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: $black;
+  margin-bottom: rem(24px);
+
+  @include tablets {
+    font-size: rem(30px);
+    margin-bottom: rem(14px);
+  }
+
+  @include phones {
+    margin-bottom: rem(12px);
+  }
+}
+
+.slide__text {
+  line-height: 1.3;
+  margin-bottom: rem(26px);
+
+  @include phones {
+    line-height: 1.4;
+    margin-bottom: rem(24px);
+  }
+}
+
+.slide__features {
+  display: flex;
+  text-align: left;
+  margin-bottom: rem(24px);
+
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+.slide__features-row {
+  line-height: 1.2;
+  margin-right: rem(44px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.slide__features-text {
+  font-weight: 700;
+  color: #000;
+}
+
+.slide__footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include tablets {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 411px) {
+    flex-direction: column;
+  }
+}
+
+.slide__price {
+  font-size: rem(60px);
+  font-weight: 300;
+  line-height: 1;
+  color: #151515;
+  margin-right: rem(28px);
+
+  @media screen and (max-width: 925px) {
+    margin-bottom: rem(24px);
+  }
+
+  @include tablets {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 411px) {
+    margin-right: 0;
+    margin-bottom: rem(18px);
+  }
+}
+
+.slide__btn {
+  z-index: 10;
+}

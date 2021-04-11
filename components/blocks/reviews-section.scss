@@ -1,0 +1,21 @@
+.reviews-section {
+  background: url("../img/berries-and-leaf.png") left bottom no-repeat;
+  position: relative;
+
+  @include tablets {
+    background-size: rem(130px);
+    background-position: rem(-24px) 110%;
+  }
+
+  &::before {
+    position: absolute;
+    content: url("../img/Strawberry.png");
+    right: 1%;
+    top: rem(66px);
+
+    @include tablets {
+      right: -3%;
+      top: 4%;
+    }
+  }
+}
