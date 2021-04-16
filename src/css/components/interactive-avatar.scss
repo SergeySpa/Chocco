@@ -1,0 +1,24 @@
+.interactive-avatar {
+  width: rem(74px);
+  height: rem(74px);
+  border: 4px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: border .2s;
+
+  @include tablets {
+    width: rem(78px);
+    height: rem(78px);
+  }
+
+  &.active,
+  &:hover {
+    border-color: $darkGreen;
+  }
+}
+
+.interactive-avatar__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

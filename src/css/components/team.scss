@@ -1,0 +1,150 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+
+  &--version-mobile {
+    display: none;
+  }
+
+  @include tablets {
+    &--version-desktop {
+      display: none;
+    }
+
+    &--version-mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.team__member {
+  margin-bottom: rem(22px);
+
+  @include tablets {
+    margin-bottom: rem(12px);
+  }
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
+}
+
+.team__item {
+  width: calc(100% / 4 - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablets {
+    width: 100%;
+    margin-bottom: rem(8px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include phones {
+    margin-bottom: 0;
+  }
+}
+
+.team__img {
+  object-fit: cover;
+
+  @include tablets {
+    display: inline;
+  }
+
+  @include phones {
+    max-width: 138px;
+  }
+}
+
+.team__title {
+  font-size: rem(21px);
+  font-weight: 700;
+  color: $black;
+  position: relative;
+  outline: none;
+  padding: 0;
+  margin-bottom: rem(8px);
+  transform: translateX(rem(-10px));
+
+  @include tablets {
+    margin-bottom: rem(11px);
+  }
+
+  @include phones {
+  transform: translateX(-8px);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: rem(-14px);
+    transform: translate(0, -50%);
+    width: 0px;
+    height: 0px;
+    border: 6px solid transparent;
+    border-top-color: $darkGreen;
+    border-bottom-width: 0;
+    border-right-width: 4px;
+    border-left-width: 4px;
+  }
+
+  .team__item.active &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: rem(-14px);
+    transform: translate(0, -50%);
+    width: 0px;
+    height: 0px;
+    border: 6px solid transparent;
+    border-bottom-color: $darkGreen;
+    border-top-width: 0;
+    border-right-width: 4px;
+    border-left-width: 4px;
+  }
+}
+
+.team__content {
+  overflow: hidden;
+  transition: height .3s;
+  height: 0;
+  
+  .team--version-desktop & {
+    position: absolute;
+    top: 100%;
+    width: calc(100% / 4 - 18px);
+  }
+}
+
+.team__content-block {
+  text-align: center;
+}
+
+.team__subtitle {
+  color: $black;
+  margin-bottom: 4px;
+
+  @include tablets {
+    font-size: rem(18px);
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+}
+
+.team__desc {
+  font-weight: 300;
+  line-height: 1.2;
+
+  @include tablets {
+    padding: 0 18% 5%;
+  }
+}

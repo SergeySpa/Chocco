@@ -1,0 +1,64 @@
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  align-items: center;
+  margin-right: rem(24px);
+    margin-bottom: rem(18px);
+    
+    @include tablets {
+      margin-bottom: rem(26px);
+    }
+  
+    @include phones {
+    margin-right: 36px;
+    margin-bottom: rem(32px);
+    }
+  
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+   &--checkbox {
+     .radio__visible {
+       border-radius: rem(4px);
+
+        &::before {
+          background: url(../img/tick.png) center center no-repeat;
+        }
+     }
+   }
+}
+
+.radio__elem {
+  display: none;
+
+    &:checked ~ .radio__visible {
+      &::before {
+        display: block;
+      }
+    }
+}
+
+.radio__visible {
+  width: rem(26px);
+  height: rem(26px);
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 0.3125rem;
+
+    &::before {
+      content: "";
+      width: rem(12px);
+      height: rem(12px);
+      background: #365a49;
+      border-radius: 50%;
+      position: absolute;
+      display: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+}

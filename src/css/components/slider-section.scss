@@ -1,0 +1,20 @@
+.slider-section {
+  position: relative;
+
+  &::after {
+    content: url("../img/blueberry-and-leaf.png");
+    position: absolute;
+    right: 0;
+    bottom: -14%;
+    pointer-events: none;
+
+    @include tablets {
+      content: url("../img/blueberry-and-leaf-size-s.png");
+      bottom: -18%;
+    }
+  }
+}
+
+.slider-container {
+  position: relative;
+}
