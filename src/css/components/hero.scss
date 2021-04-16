@@ -61,7 +61,7 @@ background:  url(../img/big-leaf.png) right bottom no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   padding: rem(24px) 0 rem(45px);
   background: url(../img/chocolates.png) right center / 50% auto  no-repeat;
 
@@ -76,6 +76,8 @@ background:  url(../img/big-leaf.png) right bottom no-repeat;
   font-weight: bold;
   margin-bottom: rem(6px);
   text-transform: uppercase;
+
+
 }
 .hero__title-desc {
   font-size: rem(21px);
@@ -84,6 +86,7 @@ background:  url(../img/big-leaf.png) right bottom no-repeat;
 
   @include tablets {
     padding: 0 24%;
+    line-height: $textLineHeight;
     margin-bottom: rem(26px);
   }
 
